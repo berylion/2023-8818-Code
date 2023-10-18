@@ -133,10 +133,12 @@ public class Robot extends TimedRobot {
 
       }
   
-    if(controller.getAButtonPressed());{
-      catapult.set(1);
-      catapult.setInverted(true);
-    }
+    if(controller.getAButton()){
+        catapult.set(1);        
+      } else if(controller.getBButton()){
+        catapult.set(0);
+      }
+    
 
 
 
